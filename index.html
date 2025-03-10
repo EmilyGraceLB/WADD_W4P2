@@ -11,23 +11,34 @@
         <div>
             <h1>Contact Form</h1>
         <form name="adopt cat">
-            <input id="fullname" name="fullname" type="text" placeholder="insert fullname" required>
-            <input id="email" name="email" type="text" placeholder="insert email address" required>
-            <input id="phone" name="phone" type="text" placeholder="xxxx xxxx">
+            <label for="fullname">Full name</label>
+            <input id="fullname" name="fullname" type="text" placeholder="insert fullname" autocomplete="off" required>
+            <label for="email">Email Address</label>
+            <input id="email" name="email" type="text" placeholder="insert email address" autocomplete="off" required>
+            <label for="phone">Phone Number</label>
+            <input id="phone" name="phone" type="text" placeholder="xxxx xxxx" autocomplete="off">
             <fieldset> 
                 <legend>Do you have access to outdoor space?</legend>
                     <label for="yes">Yes</label>
-                    <input id="yesTag" name="ourdoorSpace" type="radio" value="yes">
+                    <input id="yesTag" name="ourdoorSpace" type="radio" value="yes" required>
                     <label for="no">No</label>
-                    <input id="noTag" name="ourdoorSpace" type="radio" value="no">
+                    <input id="noTag" name="ourdoorSpace" type="radio" value="no" required>
             </fieldset>
             <fieldset>
                 <legend>Do you have children regularly visiting your home?</legend>
                     <label for="yes">Yes</label>
-                    <input id="yes" name="childrenVisit" type="radio" value="yes">
+                    <input id="yes" name="childrenVisit" type="radio" value="yes" required>
                     <label for="no">No</label>
-                    <input id="no" name="childrenVisit" type="radio" value="no">
+                    <input id="no" name="childrenVisit" type="radio" value="no" required>
             </fieldset>
+            <fieldset>
+                <legend>Are there other pets in the home?</legend>
+                <label for="yes">Yes</label>
+                <input id="yesPet" name="petsInHome" type="radio" value="yes" required>
+                <label for="no">No</label>
+                <input id="noPet" name="petsInHome" type="radio" value="yes" required>
+            </fieldset>
+            <input type="submit" id="submit" value="Submit">
         </form>
         </div>
         <script src="main.js"></script>
