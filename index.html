@@ -10,9 +10,24 @@
     <body>
         <div>
             <h1>Contact Form</h1>
-        <form>
-
-
+        <form name="adopt cat">
+            <input id="fullname" name="fullname" type="text" placeholder="insert fullname" required>
+            <input id="email" name="email" type="text" placeholder="insert email address" required>
+            <input id="phone" name="phone" type="text" placeholder="xxxx xxxx">
+            <fieldset> 
+                <legend>Do you have access to outdoor space?</legend>
+                    <label for="yes">Yes</label>
+                    <input id="yesTag" name="ourdoorSpace" type="radio" value="yes">
+                    <label for="no">No</label>
+                    <input id="noTag" name="ourdoorSpace" type="radio" value="no">
+            </fieldset>
+            <fieldset>
+                <legend>Do you have children regularly visiting your home?</legend>
+                    <label for="yes">Yes</label>
+                    <input id="yes" name="childrenVisit" type="radio" value="yes">
+                    <label for="no">No</label>
+                    <input id="no" name="childrenVisit" type="radio" value="no">
+            </fieldset>
         </form>
         </div>
         <script src="main.js"></script>
